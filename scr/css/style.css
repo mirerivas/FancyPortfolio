@@ -1,0 +1,207 @@
+/* CSS Document Menu 
+
+1.0 Fonts Faces
+2.0 Main Structure
+3.0 Navigation Menu
+4.0 Content Stucture 
+5.0 Social Icons
+
+*/
+
+
+/* 1.0 Fonts Faces */
+
+@font-face {
+    font-family: 'libre_baskervilleitalic';
+    src: url('../font/libre-baskerville/librebaskerville-italic.eot');
+    src: url('../font/libre-baskerville/librebaskerville-italic.eot?#iefix') format('embedded-opentype'),
+         url('../font/libre-baskerville/librebaskerville-italic.woff2') format('woff2'),
+         url('../font/libre-baskerville/librebaskerville-italic.woff') format('woff'),
+         url('../font/libre-baskerville/librebaskerville-italic.ttf') format('truetype'),
+         url('l../font/libre-baskerville/ibrebaskerville-italic.svg#libre_baskervilleitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('../font/libre-baskerville/librebaskerville-regular.eot');
+    src: url('../font/libre-baskerville/librebaskerville-regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/libre-baskerville/librebaskerville-regular.woff2') format('woff2'),
+         url('../font/libre-baskerville/librebaskerville-regular.woff') format('woff'),
+         url('../font/libre-baskerville/librebaskerville-regular.ttf') format('truetype'),
+         url('../font/libre-baskerville/librebaskerville-regular.svg#libre_baskervilleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'good_footregular';
+    src:url('../font/goodfoot_regular_macroman/goodfoot-webfont.eot');
+    src: url('../font/goodfoot_regular_macroman/goodfoot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/goodfoot_regular_macroman/goodfoot-webfont.woff') format('woff'),
+         url('../font/goodfoot_regular_macroman/goodfoot-webfont.ttf') format('truetype'),
+         url('../font/goodfoot_regular_macroman/goodfoot-webfont.svg#good_footregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* 2.0 Main Structure */
+
+body {
+	background-image:url(../img/background/background.png);
+	background-repeat:repeat;
+	background-size:cover;
+}
+.wrapper {
+	width:90%;
+	height:500px;
+	margin: 0 auto;
+}
+.top {
+	clear:both;
+} 
+
+.top img:nth-child(1) {
+	position:absolute;
+	top:-40px;
+	z-index:1;
+	margin-left:-50px;
+}
+.top img:nth-child(2) {
+	position:absolute;
+	left: 35%;
+	top:-15px;
+}
+.top img:nth-child(3) {
+	position:absolute;
+	top:-70px;
+	left:75%;
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+}
+#passport {
+	position:absolute;
+	left:80%;
+	top:110px;
+	z-index:-1;
+}
+.content {
+	background: url(../img/objects/notebook.png) no-repeat; 
+	width:1025px;
+	height:602px;
+	position:absolute;
+	top:110px;
+	left:10%;
+}
+#logo {
+	position:absolute;
+	z-index:2;
+	left:105px;
+	top:10px;
+}
+#map {
+	position:absolute;
+	z-index:-2;
+    left:60%;
+	top:350px;
+}
+
+/* 3.0 Navigation Menu */
+
+nav {
+	position:absolute;
+	top:250px;
+	left:-60px;
+}
+nav a {
+	text-decoration:none;
+	color:black;
+	font-family: 'libre_baskervilleitalic';
+	font-size:18px;
+}
+nav ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+nav ul li {
+	width:160px;
+	height:45px;
+	cursor:pointer;
+}
+nav ul li span {
+	position:absolute;
+	margin:10px 0px 0px 15px;
+}
+nav ul li:hover {
+	margin-left:20px;
+}
+#tap1 {
+	background:url(../img/menu/tab1.png) no-repeat;
+}
+#tap2 {
+	background:url(../img/menu/tab2.png) no-repeat;
+}
+#tap3 {
+	background:url(../img/menu/tab3.png) no-repeat;	
+}
+#tap4 {
+	background:url(../img/menu/tab4.png) no-repeat;	
+}
+
+/* 4.0 Content Stucture */
+
+article {
+	padding:5px;
+	width:330px;
+	height:340px;
+	float:left;
+	text-align:justify;
+}
+article:nth-child(1n) {
+	margin-left:120px;
+	margin-top:140px;
+}
+article:nth-child(2n) {
+	margin-left:70px;
+	margin-top:20px;
+	height:535px;
+}
+h2 {
+	margin:10px 0px -4px 0px;
+	font-family: 'libre_baskervilleregular';
+}
+hr {
+	border:solid #000000 1px;
+	margin:0px -5px 0px -5px;
+}
+
+/* 5.0 Social Icons */
+
+.social {
+	position:absolute;
+	z-index:10;
+}
+.social ul {
+	list-style:none;
+	margin:0px;
+	padding:10px;	
+}
+.social ul li {
+	display:inline;
+}
+.social img:hover {
+	-ms-transform: scale(.75,.75); /* IE 9 */
+	-webkit-transform: scale(.75,.75); /* Chrome, Safari, Opera */
+	transform: scale(.75,.75);
+}
+.social {
+	top:605px;
+	left:280px;
+	z-index:4;
+}
+	
+
+	
+	

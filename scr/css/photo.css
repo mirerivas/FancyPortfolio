@@ -1,0 +1,37 @@
+/* CSS Document */
+#tap2 {
+		margin-left:20px;
+}
+article img {
+	position:static;
+	display:block;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 6px;
+}
+#next-photos {
+	float:right;
+	margin: -20px 0px 0px 280px;
+	font-family: 'libre_baskervilleregular';
+	font-size:14px;
+	float:right;
+	width:125px;
+	text-align:end;
+}
+#next-photos a {
+	text-decoration:none;
+	color: #000000;
+}
+#next-photos a:hover {
+	color: #737373;
+}
+article span {
+	position:absolute;
+	margin:-30px 0px 0px 45px;
+	font-size:20px;
+	font-weight:bold;
+	font-family: 'good_footregular';
+}
+article:nth-child(2n) {
+	margin-top:13px;
+}
